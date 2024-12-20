@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>赤ちゃん成長記録アプリ</title>
+</head>
+<body>
+    <div class="container">
+        <h2>赤ちゃん成長記録アプリ</h2>
+        <form id="baby-form">
+            <label for="name">お名前:</label>
+            <input type="text" id="name" required>
+            <label for="dob">誕生日:</label>
+            <input type="date" id="dob" required>
+            <label for="weight">体重(kg):</label>
+            <input type="number" id="weight" step="0.1" required>
+            <label for="height">身長(cm):</label>
+            <input type="number" id="height" required>
+            <label for="photo">写真:</label>
+            <input type="file" id="photo" accept="image/*" required>
+            <button type="submit">記録</button>
+        </form>
+        <h2>成長記録</h2>
+        <ul id="record-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
